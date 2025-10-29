@@ -180,7 +180,7 @@ isbn=false,                                         % Не показывать 
 
 \begin{document}
 
-\input{1_title}                                     % Титульник
+\input{01_title}                                     % Титульник
 
 \newpage % Переходим на новую страницу
 \setcounter{page}{2} % Начинаем считать номера страниц со второй
@@ -188,10 +188,16 @@ isbn=false,                                         % Не показывать 
 
 \tableofcontents*                                   % Автособираемое оглавление
 
-\input{2_intro}                                     % Введение
-\input{3_chap1}                                     % Первая глава
-\input{4_chap2}                                     % Вторая глава
-\input{5_chap3}                                     % Третья глава
+\input{02_intro}                                     % Введение
+\input{03_laser}                                     % Выбор лазера
+\input{04_energy}                                    % Плотность энергии
+\input{05_beam_initial}                              % Параметры пучка
+\input{06_beam_path}                                 % Ход пучка
+\input{07_dynamics}                                  % Динамика
+\input{08_energy_optics}                             % Энергетика на optics
+\input{09_comparison}                                % Сравнение
+\input{10_sketch}                                    % Чертеж
+\input{11_conclusion}                                % Выводы
 
 \printbibliography[title=Список использованных источников] % Автособираемый список литературы
 
