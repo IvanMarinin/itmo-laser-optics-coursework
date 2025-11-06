@@ -3,31 +3,39 @@
 
 \section{Исходные параметры лазерного пучка}
 
-Для расчета характеристик пучка в исходной перетяжке используем параметры выбранного лазера BC-10:
+Для расчета характеристик пучка в исходной перетяжке используем параметры лазера:
 \begin{itemize}
-    \item Длина волны: $\lambda = 10.6$ мкм
-    \item Диаметр пучка на выходном окне: $D_w = 3.5$ мм
-    \item Расходимость пучка: $2\theta = 8$ мрад
-    \item Качество пучка: $M^2 = 1.1$
+    \item Длина волны: $\lambda = 10,600$ нм = $10.6$ мкм
+    \item Диаметр пучка: $D_w = 3.6$ мм
+    \item Полный угол расходимости: $2\theta = 5$ мрад
+    \item Полуугол расходимости: $\theta = 2.5$ мрад
+    \item Качество пучка: $M^2 = 1.3$
 \end{itemize}
 
 \section{Расчет радиуса перетяжки пучка}
 
 \[
-\omega_{01} = \frac{M^2 \lambda}{\pi \theta} = \frac{1.1 \cdot 10.6 \cdot 10^{-6}}{\pi \cdot 4 \cdot 10^{-3}} = 0.928 \, \text{мм}
+\omega_{01}
+= \dfrac{M^2\,\lambda}{\pi\,\theta}
+= \dfrac{1.3 \cdot 10.6 \cdot 10^{-6}}{\pi \cdot 2.5 \cdot 10^{-3}} 
+\approx 1.754 \, \text{мм}
 \]
 
 \section{Расчет длины Рэлея}
 
 \[
-z_{R1} = \frac{\pi \omega_{01}^2}{M^2 \lambda} = \frac{\pi \cdot (0.928 \cdot 10^{-3})^2}{1.1 \cdot 10.6 \cdot 10^{-6}} = 0.23 \, \text{м}
+z_{R1}
+= \dfrac{M^2\,\lambda}{\pi\,\theta^2}
+= \dfrac{1.3 \cdot 10.6 \cdot 10^{-6}}{\pi \cdot (2.5 \cdot 10^{-3})^2}
+\approx 702 \, \text{мм}
 \]
 
 \section{Расчет положения перетяжки относительно выходного окна}
 
 \begin{align*}
-z_0 &= z_{R1} \sqrt{\left(\frac{D_w \pi \theta}{2 M^2 \lambda}\right)^2 - 1} \\
-z_0 &= 0.23 \sqrt{\left(\frac{3.5 \cdot 10^{-3} \cdot \pi \cdot 4 \cdot 10^{-3}}{2 \cdot 1.1 \cdot 10.6 \cdot 10^{-6}}\right)^2 - 1} = 0.368 \, \text{м}
+   z_0
+    &= z_{R1}\,\sqrt{\left(\dfrac{D_w\cdot\pi\cdot\theta}{2\cdot M^2\cdot\lambda}\right)^2 - 1}\\
+    &= 0.702\,\sqrt{\left(\dfrac{3.6\cdot 10^{-3}\cdot\pi\cdot 2.5\cdot 10^{-3}}{2\cdot 1.3\cdot 10.6\cdot 10^{-6}}\right)^2 - 1} \approx 161 \, \text{мм} 
 \end{align*}
 
 \endinput
